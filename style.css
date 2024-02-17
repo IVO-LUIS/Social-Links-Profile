@@ -1,0 +1,129 @@
+/* ============= START RESET CSS ============ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/* ============= END RESET CSS ============ */
+
+/* ============= START DEFAULT CSS ============ */
+:root {
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 20%);
+  --Dark-Grey: hsl(0, 0%, 12%);
+  --Off-Black: hsl(0, 0%, 8%);
+}
+
+body {
+  background-color: var(--Off-Black);
+  display: grid;
+  place-content: center;
+  font-family: "Inter", sans-serif;
+  gap: 1.2rem;
+}
+
+main {
+  background-color: var(--Dark-Grey);
+  min-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: 0.7rem;
+}
+
+main > img {
+  border-radius: 50%;
+  width: 5.5rem;
+  margin-bottom: 1.5rem;
+}
+
+main > h1 {
+  color: var(--White);
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+main > p:nth-of-type(1) {
+  color: var(--Green);
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+main > p:nth-of-type(2) {
+  color: var(--White);
+  font-weight: 400;
+  font-size: 0.875rem;
+  margin-top: 1.5rem;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.links {
+  background-color: var(--Grey);
+  color: var(--White);
+  font-weight: 800;
+  font-size: 0.875rem;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.links:hover {
+  background-color: var(--Green);
+  color: var(--Off-Black);
+}
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+  color: var(--White);
+}
+.attribution a {
+  /* color: hsl(228, 45%, 44%); */
+  color: var(--Green);
+}
+/* ============= END DEFAULT CSS ============ */
+
+/* ============= START DESKTOP  CSS ============ */
+@media (min-width: 700px) {
+  main {
+    min-width: 25rem;
+    padding: 2.5rem;
+  }
+}
+/* ============= END DESKTOP CSS ============ */
